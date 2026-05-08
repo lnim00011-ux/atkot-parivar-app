@@ -1,0 +1,26 @@
+﻿{
+  "expo": {
+    "name": "Atkot Parivar-Surat",
+    "slug": "atkot-parivar-surat",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#f7f3ea",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.atkotparivar.surat",
+      "config": { "usesNonExemptEncryption": false },
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Atkot Parivar-Surat to capture result photos.",
+        "NSPhotoLibraryUsageDescription": "Allow Atkot Parivar-Surat to upload result photos."
+      }
+    },
+    "android": {
+      "package": "com.atkotparivar.surat",
+      "googleServicesFile": "./google-services.json",
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "POST_NOTIFICATIONS"]
+    },
+    "plugins": ["expo-secure-store", "expo-notifications", "expo-image-picker"]
+  }
+}
